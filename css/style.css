@@ -1,0 +1,22 @@
+body {
+    background-color: #EAF6F6;
+  }
+
+.calculate-box {
+    display: box;
+}
+.input-table {
+    background-color: rgb(174, 185, 185);
+    text-align: center;
+    
+}
+.middle {
+    text-align: center;
+    font-weight: 700;
+}
+.button-style {
+    background-color: skyblue;
+    
+    border-radius: 4px;
+    padding: 6px;
+}
