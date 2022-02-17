@@ -5,57 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assingment-5</title>
+    <!--*********************** css link ******************** -->
     <link rel="stylesheet" href="css/style.css">
-    
+   <!--************************ Tailwind Link ******************** -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="p-8">
+<body class="p-8 md	">
+    <!--*************************** header part******************************** -->
     <header>
         <h1 class="text-5xl font-semibold text-center text-sky-600 mb-8 py-8">Monthly Income and Expenditure</h1>
     </header>
-    <main class="w-full	">
-        
-        <section class="calculate-box mx-3 p-8 flex items-stretch space-x-8">
+
+    <main>
+        <section class="calculate-box mx-auto p-8 flex items-stretch space-x-8">
+   <!--************************** Image set *******************************  -->
             <div class="py-4 mx-16 addImgSet w-6/12 h-full">
                 <img src="images/calculate-income.jpg" alt="calculate-income" >
-
             </div>
-                <div class="input-table py-8 addEventForm border-8	w-6/12">
+ <!--************************ form er tools ******************************** -->
+                <form class="input-table py-8 addEventForm border-8	w-6/12">
+                    
+                <h3 class="middle mb-2">Income</h3>
 
-                <h3 class="middle">Income</h3>
-                
-             <div class="mt-2 ">
                 <label for="">Income:</label>
-                <input id="addIncomeInput" class="mb-2" type="text" placeholder=" enter a number">
+                <input id="add-incomeInput" class="mb-2 rounded" type="text" placeholder=" $ Enter Amount">
+
                 <h3 class="middle mb-2">Expenditure</h3>
                  
-                     <label >tution cost:</label>
-                     <input id="addTutionCost" class="mb-3"  type="text" placeholder=" enter a number"><br>
+                     <label for="tution-box">tution cost:</label>
+                     <input id="add-tutionCost" class="mb-3 rounded"  type="text" placeholder="   Enter Amount"><br>
                  
-                     <label>Rent:</label>
-                     <input id="" class="mb-3" type="text" placeholder=" enter a number"><br>
+                     <label for="rent-box">Rent:</label>
+                     <input id="add-rent" class="mb-3 rounded" type="text" placeholder="  Enter Amount"><br>
                  
-                     <label>Others:</label>
-                     <input id="" class="mb-3" type="text" placeholder=" enter a number"><br>
+                     <label for="others-box">Others:</label>
+                     <input id="add-others" class="mb-3 rounded" type="text" placeholder="  Enter Amount"><br>
                  
-                 <button class="button-style mb-2 middle">Calculate</button><br>
-                 <h3 class="middle mb-2">Total Expenditure: </h3>
-                   <input type="text">
-                 <h3 class="middle">Balance: </h3>
-                    <br>
+                 <button id="calculate-btn" class="button-style mb-2 middle">Calculate</button><br>
+
+                 <h3 class="middle mb-2">Total Expenditure: <span id="total-expenditure">00</span></h3>
+                 
+                   <h3 class="middle mb-2">Balance: <span id="remnant-balance">00</span></h3>
+                    
                  
                      <label>Save:</label>
-                 <input class="w-16" type="text"> %
+                 <input id="add-percentage" class="w-16 rounded" type="text"> %
+                 <button id="save-btn" class="button-style mb-2">Save</button><br>
                  
-                 <button class="button-style">Save</button><br>
+                 <h3 class="middle">Saving Amount: <span id="saving-amount">00</span></h3> 
                  
-                 <h3 class="middle mb-2">Saving Amount:</h3> 
-                 <h3 class="middle">Remaining Balance:</h3> 
-             </div>
-                 </div>
+                 <h3 class="middle">Remaining Balance: <span id="remaining-balance">00</span></h3> 
+                 
+             
+                </form>
               </section>
         </main>
-        
+   <!--*********************** JS link *************************** -->
     <script src="js/app.js"></script>
 </body>
 </html>
