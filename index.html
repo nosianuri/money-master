@@ -6,59 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assingment-5</title>
     <link rel="stylesheet" href="css/style.css">
+    
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="p-8">
     <header>
         <h1 class="text-5xl font-semibold text-center text-sky-600 mb-8 py-8">Monthly Income and Expenditure</h1>
     </header>
-    <main class=" w-3/6">
+    <main class="w-full	">
         
-        <section class="calculate-box">
-            <div>
-                <span class="" >
-                 <img class="py-4" src="images/calculate-income.jpg" alt="calculate-income" >
-                </span>
-             </div>
-             </section>
-              <section class="input-table">
-                <h3 class="middle">Acquirement</h3>
+        <section class="calculate-box mx-3 p-8 flex items-stretch space-x-8">
+            <div class="py-4 mx-16 addImgSet w-6/12 h-full">
+                <img src="images/calculate-income.jpg" alt="calculate-income" >
+
+            </div>
+                <div class="input-table py-8 addEventForm border-8	w-6/12">
+
+                <h3 class="middle">Income</h3>
                 
-             <form class="mt-2">
-                <label for="">Acquirement:</label>
-                <input type="text" placeholder="enter a number">
-                <h3 class="middle">Outlay</h3>
+             <div class="mt-2 ">
+                <label for="">Income:</label>
+                <input id="addIncomeInput" class="mb-2" type="text" placeholder=" enter a number">
+                <h3 class="middle mb-2">Expenditure</h3>
                  
-                     <label >Food:</label>
-                     <input class="mb-4"  type="text" placeholder="enter a number"><br>
+                     <label >tution cost:</label>
+                     <input id="addTutionCost" class="mb-3"  type="text" placeholder=" enter a number"><br>
                  
                      <label>Rent:</label>
-                     <input class="mb-4" type="text" placeholder="enter a number"><br>
+                     <input id="" class="mb-3" type="text" placeholder=" enter a number"><br>
                  
-                     <label>Clothes:</label>
-                     <input type="text" placeholder="enter a number"><br>
+                     <label>Others:</label>
+                     <input id="" class="mb-3" type="text" placeholder=" enter a number"><br>
                  
-                 <button class="button-style middle">Calculate</button><br>
-                 <h3 class="middle">Total Outlay: </h3>
-                    <br>
+                 <button class="button-style mb-2 middle">Calculate</button><br>
+                 <h3 class="middle mb-2">Total Expenditure: </h3>
+                   <input type="text">
                  <h3 class="middle">Balance: </h3>
                     <br>
                  
                      <label>Save:</label>
-                 <input type="text"> %
+                 <input class="w-16" type="text"> %
                  
                  <button class="button-style">Save</button><br>
                  
-                 <h3 class="middle">Saving Amount:</h3> 
-                 
-                 
+                 <h3 class="middle mb-2">Saving Amount:</h3> 
                  <h3 class="middle">Remaining Balance:</h3> 
-                 
-                </form>
-              
-        </section>
+             </div>
+                 </div>
+              </section>
+        </main>
         
-    </main>
     <script src="js/app.js"></script>
 </body>
 </html>

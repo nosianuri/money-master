@@ -1,12 +1,16 @@
+/* body selector */
 body {
     background-color: #EAF6F6;
   }
-
+ 
+/* input box selector */
 .calculate-box {
     display: box;
 }
+
 .input-table {
     background-color: rgb(174, 185, 185);
+   
     text-align: center;
     
 }
@@ -17,6 +21,10 @@ body {
 .button-style {
     background-color: skyblue;
     
+    color: #8b8b8b;
     border-radius: 4px;
-    padding: 6px;
+    padding: 5px 10px;
 }
+
+
+
