@@ -27,6 +27,11 @@ body {
 }
 
 
-/* For mobile phones: */
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-1 {width: 100%;}
+    .col-2 {width: 100%;}
+    .col-3 {width: 100%;}
+  }
  

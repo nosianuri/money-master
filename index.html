@@ -12,18 +12,18 @@
 </head>
 <body class="p-8 md	">
     <!--*************************** header part******************************** -->
-    <header>
+    <header class="col-1">
         <h1 class="text-5xl font-semibold text-center text-sky-600 mb-8 py-8">Monthly Income and Expenditure</h1>
     </header>
 
     <main>
         <section class="calculate-box mx-auto p-8 flex items-stretch space-x-8">
    <!--************************** Image set *******************************  -->
-            <div class="py-4 mx-16 addImgSet w-6/12 h-full">
+            <div class="py-4 mx-16 addImgSet w-6/12 h-full col-2">
                 <img src="images/calculate-income.jpg" alt="calculate-income" >
             </div>
  <!--************************ form er tools ******************************** -->
-                <form class="input-table py-8 addEventForm border-8	w-6/12">
+                <div class="input-table py-8 addEventForm border-8	w-6/12 col-3">
                     
                 <h3 class="middle mb-2">Income</h3>
 
@@ -33,7 +33,7 @@
                 <h3 class="middle mb-2">Expenditure</h3>
                  
                      <label for="tution-box">tution cost:</label>
-                     <input id="add-tutionCost" class="mb-3 rounded"  type="text" placeholder="   Enter Amount"><br>
+                     <input id="add-tution" class="mb-3 rounded"  type="text" placeholder="   Enter Amount"><br>
                  
                      <label for="rent-box">Rent:</label>
                      <input id="add-rent" class="mb-3 rounded" type="text" placeholder="  Enter Amount"><br>
@@ -44,6 +44,7 @@
                  <button id="calculate-btn" class="button-style mb-2 middle">Calculate</button><br>
 
                  <h3 class="middle mb-2">Total Expenditure: <span id="total-expenditure">00</span></h3>
+                 
                  
                    <h3 class="middle mb-2">Balance: <span id="remnant-balance">00</span></h3>
                     
@@ -57,7 +58,7 @@
                  <h3 class="middle">Remaining Balance: <span id="remaining-balance">00</span></h3> 
                  
              
-                </form>
+                </div>
               </section>
         </main>
    <!--*********************** JS link *************************** -->
