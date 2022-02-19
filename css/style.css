@@ -4,9 +4,7 @@ body {
   }
  
 /* input box selector */
-.calculate-box {
-    display: box;
-}
+
 
 .input-table {
     background-color: rgb(174, 185, 185);
