@@ -10,27 +10,27 @@
    <!--************************ Tailwind Link ******************** -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="p-8 md	">
+<body class="">
     <!--*************************** header part******************************** -->
-    <header class="w-full md:w-6/12">
-        <h1 class="text-5xl font-semibold text-center text-sky-600 mb-8 py-8">Monthly Income and Expenditure</h1>
+    <header class="w-full">
+        <h1 class="text-5xl text-center	py-8 font-semibold text-center text-sky-600">Monthly Income and Expenditure</h1>
     </header>
 
     <main>
-        <section class="calculate-box mx-auto p-8 flex flex-wrap items-stretch space-x-8">
+        <div class="p-8 md:flex">
    <!--************************** Image set *******************************  -->
-            <div class="py-4 mx-8  w-full md:w-6/12 h-full ">
+            <div class="inline d:w-32 md:w-6/12 h-16 ">
                 <img src="images/calculate-income.jpg" alt="calculate-income" >
             </div>
  <!--************************ form er tools ******************************** -->
-                <div class="input-table py-8 addEventForm border-8	w-full md:w-6/12 ">
+                <div class=" bg-blue-200 text-center py-8 addEventForm 	w-full md:w-6/12 ">
                     
-                <h3 class="middle mb-2">Income</h3>
+                <h3 class="font-medium	 mb-2">Income</h3>
 
                 <label for="">Income:</label>
-                <input id="add-income" class="mb-2 rounded" type="text" placeholder=" $ Enter Amount">
+                <input id="add-income" class="mb-2 rounded" type="text" placeholder="  Enter Amount">
 
-                <h3 class="middle mb-2">Expenditure</h3>
+                <h3 class="font-medium	 mb-2">Expenditure</h3>
                  
                      <label for="tuition-box">tution cost:</label>
                      <input id="add-tuition" class="mb-3 rounded"  type="text" placeholder="   Enter Amount"><br>
@@ -43,23 +43,33 @@
                  
                  <button id="calculate-btn" class="button-style mb-2 middle">Calculate</button><br>
 
-                 <h3 class="middle mb-2">Total Expenditure: <span id="total-expenditure">00</span></h3>
+                 <h3 class="font-medium	 mb-2">Total Expenditure: <span id="total-expenditure">00</span></h3>
                  
                  
-                   <h3 class="middle mb-2">Balance: <span id="remnant-balance">00</span></h3>
+                   <h3 class="font-medium	 mb-2">Balance: <span id="remnant-balance">00</span></h3>
                     
                  
                      <label>Save:</label>
                  <input id="add-percentage" class="w-16 rounded" type="text"> %
                  <button id="save-btn" class="button-style mb-2">Save</button><br>
                  
-                 <h3 class="middle">Saving Amount: <span id="saving-amount">00</span></h3> 
+                 <h3 class="font-medium	">Saving Amount: <span id="saving-amount">00</span></h3> 
                  
-                 <h3 class="middle">Remaining Balance: <span id="remaining-balance">00</span></h3> 
+                 <h3 class="font-medium	">Remaining Balance: <span id="remaining-balance">00</span></h3> 
                  
-             
+             </div>
+            </div>
+              
+                <div class="notify-section">
+                    <p id="negative-error" class="notify">Enter positive number, Please try again </p>
+                    <p id="nan-error" class="notify"> Enter positive number, Please try again</p>
+                    <p id="saveBtn-negative-error" class="notify">  Enter positive number, Please try again</p>
+                    <p id="saveBtn-nan-error" class="notify"> Enter positive number, Please try again</p>
+                    <p id="saveBtn-balance-error" class="notify"> Enter positive number, Please try again</p>
+                    <p id="saveBtn-balance-error" class="notify"> Enter positive number, Please try again</p>
+
                 </div>
-              </section>
+              
         </main>
    <!--*********************** JS link *************************** -->
     <script src="js/app.js"></script>

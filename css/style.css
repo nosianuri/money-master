@@ -3,19 +3,7 @@ body {
     background-color: #EAF6F6;
   }
  
-/* input box selector */
-
-
-.input-table {
-    background-color: rgb(174, 185, 185);
-   
-    text-align: center;
-    
-}
-.middle {
-    text-align: center;
-    font-weight: 700;
-}
+/* button customize */
 .button-style {
     background-color: skyblue;
     
@@ -23,7 +11,20 @@ body {
     border-radius: 4px;
     padding: 5px 10px;
 }
-
+.notify {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: none;
+}
+.notify-section{
+    width: 35%;
+    margin: 0 auto;
+}
 
 
 @media only screen and (max-width: 768px) {
