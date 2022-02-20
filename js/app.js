@@ -38,12 +38,18 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     }
 });
     // save money and remaining balance
+    function saveInputMoney(saveInputId){
+        let getInputField = document.getElementById(saveInputId).value;
+        let getInputAmount = parseFloat(getInputField);
+        return getInputAmount;
+        }
+
 document.getElementById('save-btn').addEventListener('click', function(){
-    const addTuition = inputValue('add-tuition');
-    const addRent = inputValue('add-rent');
-    const addOthers = inputValue('add-others');
-    const addIncome = inputValue('add-income');
-    const saveInput = inputValue('add-percentage');
+    const addTuition = saveInputMoney('add-tuition');
+    const addRent = saveInputMoney('add-rent');
+    const addOthers = saveInputMoney('add-others');
+    const addIncome = saveInputMoney('add-income');
+    const saveInput = saveInputMoney('add-percentage');
     const savingAmount = document.getElementById('saving-amount');
     const saveAmount = (saveInput * addIncome) / 100;
     savingAmount.innerText = saveAmount;
